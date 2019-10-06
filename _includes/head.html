@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="fORI6r2VVZHziv8pS917geJaVgJCRAEK6BViHOWI5ck" /> <!-- jess -->
   <meta name="google-site-verification" content="PXb5dUl105r4jBsDy4KUIPGuk4HcVLTpIJY187NY5A8" /> <!-- pizza -->
-
+  <meta name="og:image" content="{% if page.logo_path %}{{ page.logo_path | "/assets/img/signo.png" }}{% endif %}"/>
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
